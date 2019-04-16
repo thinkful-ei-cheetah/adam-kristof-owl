@@ -24,7 +24,6 @@ class App extends Component {
       }
     });
 
-
     return (
       <div className="App">
         <div className="sidebar">
@@ -32,7 +31,7 @@ class App extends Component {
           <ChatLog log={this.props.chatData} addInfo= {personId}/>
         </div>
         <div className="video-box">
-          <Stage/>
+          <Stage inStage={this.props.participants.filter(person => person.onStage)}/>
         </div>
         {/* Bottom Bar can be another component made up of more components or flexbox? */}
         

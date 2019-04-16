@@ -3,7 +3,6 @@ import './ParticipantLog.css';
 
 
 export default function ParticipationLog (props){
-    console.log(props);
     const participants = props.participants.map(participant => {
         return (
           <li key={participant.id}>
