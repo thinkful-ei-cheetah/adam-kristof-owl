@@ -1,6 +1,5 @@
 import React from 'react';
 import './ChatLog.css';
-
 export default function ChatLog (props){
 
 
@@ -18,13 +17,18 @@ export default function ChatLog (props){
 
   }
 
+  let getTime= (timeString) =>{
+    let time = new Date(timeString);
+    return `${time.getHours()}: ${time.getMinutes()}`;
+  } 
+
   const entryLog = props.log.map(logEntry => {
     return (
     <li key={logEntry.timestamp}>
       <div>
         <div>{getName(logEntry.participantId)}</div>
 
-        <div>{logEntry.timestamp}</div>
+        <div>{getTime(logEntry.timestamp)}</div>
       </div>
     </li>
     )
