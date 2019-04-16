@@ -14,33 +14,21 @@ class App extends Component {
   
   
   render() {
-<<<<<<< HEAD
-      const personId = this.props.participants.map(person=>{
-=======
 
     
     const personId = this.props.participants.map(person=>{
->>>>>>> b98e81d05266ea0394ea8b61e757d395e615f769
       return {
         id: person.id,
         name: person.name,
         avatar: person.avatar
       }
     });
-<<<<<<< HEAD
-=======
-
->>>>>>> b98e81d05266ea0394ea8b61e757d395e615f769
 
     return (
       <div className="App">
         <div className="sidebar">
           <ParticipantLog participants={this.props.participants}/>
-<<<<<<< HEAD
-          <ChatLog log={this.props.chatData} addInfo={personId} />
-=======
           <ChatLog log={this.props.chatData} addInfo= {personId}/>
->>>>>>> b98e81d05266ea0394ea8b61e757d395e615f769
         </div>
         <div className="video-box">
           <Stage/>
