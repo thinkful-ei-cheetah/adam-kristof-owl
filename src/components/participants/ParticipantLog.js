@@ -7,7 +7,7 @@ export default function ParticipationLog (props){
         return (
           <li key={participant.id}>
             <div className='personContainer'>
-              <img src={participant.avatar} alt={`avitar for ${participant.name}`} />
+              <img className="avatar-img" src={participant.avatar} alt={`avitar for ${participant.name}`} />
               <div className='personName'>
                 <div>{participant.name}</div>
                 <div>{participant.onStage ? 'on stage' : 'in session'}</div>

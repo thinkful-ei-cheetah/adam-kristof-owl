@@ -10,7 +10,7 @@ export default function ChatLog (props){
     const person = props.addInfo.find(person=> person.id === id) 
     return (
     <div>
-      <img src={person.avatar} alt = {`img of ${person.name}`}/>
+      <img className="avatar-img" src={person.avatar} alt = {`img of ${person.name}`}/>
       <span>{person.name}</span>
     </div>
     )

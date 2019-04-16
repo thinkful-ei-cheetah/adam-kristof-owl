@@ -7,7 +7,7 @@ export default function Stage (props){
     return (
       <li key={staged.id}>
         <div>{staged.name}</div>
-        <img src={staged.avatar}/>
+        <img className="avatar-image-large" src={staged.avatar}/>
       </li>
     )
   });
