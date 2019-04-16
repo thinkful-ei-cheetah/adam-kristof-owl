@@ -6,17 +6,30 @@ import ParticipantLog from './components/participants/ParticipantLog'
 
 class App extends Component {
   state={
-    showChat: false
+    showChat: false,
+ 
   }
+
+
+  
   
   render() {
-    console.log(this)
+
+    
+    const personId = this.props.participants.map(person=>{
+      return {
+        id: person.id,
+        name: person.name,
+        avatar: person.avatar
+      }
+    });
+
 
     return (
       <div className="App">
         <div className="sidebar">
           <ParticipantLog participants={this.props.participants}/>
-          <ChatLog log={this.props.chatData} />
+          <ChatLog log={this.props.chatData} addInfo= {personId}/>
         </div>
         <div className="video-box">
           <Stage/>

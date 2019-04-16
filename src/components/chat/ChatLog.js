@@ -2,11 +2,17 @@ import React from 'react';
 import './ChatLog.css';
 
 export default function ChatLog (props){
-  console.log(props);
+  
+  const getName =(id)=>{
+    return props.addInfo.find(person=> person.id === id) 
+  }
+
+
   const entryLog = props.log.map(logEntry => {
     return (
     <li key={logEntry.timestamp}>
       <div>
+        <div>{getName(logEntry.particiantId).name}</div>
         <div>{logEntry.timestamp}</div>
       </div>
     </li>
