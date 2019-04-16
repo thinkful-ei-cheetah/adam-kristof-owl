@@ -1,0 +1,6 @@
+.ChatLog{
+  width:350px;
+  border: 1px solid grey;
+  height: 600px;
+  overflow-y: auto;
+}
