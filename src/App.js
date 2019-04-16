@@ -8,15 +8,15 @@ class App extends Component {
   state={
     showChat: false
   }
-
+  
   render() {
-
-    console.log(this.props)
+    console.log(this)
 
     return (
       <div className="App">
         <div className="sidebar">
-          <ChatLog />
+          <ParticipantLog participants={this.props.participants}/>
+          <ChatLog log={this.props.chatData} />
         </div>
         <div className="video-box">
           <Stage/>

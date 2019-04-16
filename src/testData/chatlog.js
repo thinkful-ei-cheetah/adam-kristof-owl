@@ -4,12 +4,12 @@ const chatEvents = [
       type: 'message',
       message: 'Hello world',
       time: 1548852646559,
-      timestamp: 1548852484247
+      timestamp: 1548852484245
   },
   {
       participantId: 2,
       type: 'thumbs-up',
-      timestamp: 1548852484247
+      timestamp: 1548852484246
   },
   {
       participantId: 4,
@@ -19,12 +19,12 @@ const chatEvents = [
   {
       participantId: 1,
       type: 'raise-hand',
-      timestamp: 1548852544247
+      timestamp: 1548852544245
   },
   {
       participantId: 1,
       type: 'clap',
-      timestamp: 1548852544247
+      timestamp: 1548852544246
   },
   {
       participantId: 1,
