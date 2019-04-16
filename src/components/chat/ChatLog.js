@@ -2,9 +2,18 @@ import React from 'react';
 import './ChatLog.css';
 
 export default function ChatLog (props){
-  
+
+
   const getName =(id)=>{
-    return props.addInfo.find(person=> person.id === id) 
+ 
+    const person = props.addInfo.find(person=> person.id === id) 
+    return (
+    <div>
+      <img src={person.avatar} alt = {`img of ${person.name}`}/>
+      <span>{person.name}</span>
+    </div>
+    )
+
   }
 
 
@@ -12,7 +21,8 @@ export default function ChatLog (props){
     return (
     <li key={logEntry.timestamp}>
       <div>
-        <div>{getName(logEntry.particiantId).name}</div>
+        <div>{getName(logEntry.participantId)}</div>
+
         <div>{logEntry.timestamp}</div>
       </div>
     </li>
