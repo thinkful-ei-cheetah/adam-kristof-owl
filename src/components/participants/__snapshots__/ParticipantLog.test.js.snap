@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Participant Componenet working Renders as it did the first time! 1`] = `
+<div
+  className="participentView"
+>
+  <ul />
+</div>
+`;

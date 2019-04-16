@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stage Componenet working Renders as it did the first time! 1`] = `
+<div
+  className="vid"
+>
+  <ul />
+</div>
+`;
