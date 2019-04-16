@@ -10,11 +10,13 @@ class App extends Component {
   }
 
   render() {
+
+    console.log(this.props)
+
     return (
       <div className="App">
         <div className="sidebar">
-        {/* We'll need to know what button is pressed, participants or chat. depending we'll know if we should render chat or participation  */}
-          <ChatLog/>
+          <ChatLog />
         </div>
         <div className="video-box">
           <Stage/>
